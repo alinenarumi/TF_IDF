@@ -1,2 +1,2 @@
 # TF_IDF
-Projeto Usando Tecnica TF-IDF
+Projeto Usando Técnica TF-IDF.
