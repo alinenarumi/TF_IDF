@@ -14,7 +14,7 @@ public abstract class Arquivo {
 		
 		if (extensao.equals("txt"))
 		{
-			Arquivo arquivo = new ArquivoTxt();
+			Arquivo arquivo = new ArquivoTXT();
 			arquivo.nome=nome;
 						
 			return  arquivo;
