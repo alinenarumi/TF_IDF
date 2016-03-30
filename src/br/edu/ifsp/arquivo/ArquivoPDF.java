@@ -3,6 +3,7 @@ package br.edu.ifsp.arquivo;
 import java.io.File;
 import java.io.IOException;
 
+// http://pdfbox.apache.org/download.cgi#20x
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 

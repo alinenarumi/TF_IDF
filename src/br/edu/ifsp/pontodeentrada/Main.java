@@ -1,6 +1,8 @@
-package br.edu.ifsp.arquivo;
+package br.edu.ifsp.pontodeentrada;
 
 import java.io.IOException;
+
+import br.edu.ifsp.arquivo.Arquivo;
 
 public class Main {
 

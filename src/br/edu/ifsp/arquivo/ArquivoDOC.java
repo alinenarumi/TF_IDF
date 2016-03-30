@@ -3,6 +3,7 @@ package br.edu.ifsp.arquivo;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+// http://poi.apache.org/download.html#POI-3.14
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 
