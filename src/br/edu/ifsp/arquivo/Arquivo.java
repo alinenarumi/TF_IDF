@@ -6,38 +6,37 @@ import java.util.Map;
 public abstract class Arquivo {
 	// Tipo de arquivos aceitos no sistema
 	public static final String DOC = "doc";
+	public static final String DOCX = "docx";
 	public static final String PDF = "pdf";
 	public static final String TXT = "txt";
 	
 	// Atributos
 	protected String nome;
-	private Map<String,Integer>palavras = new HashMap<>();
+	private Map<String, Integer>palavras = new HashMap<>();
 	
 	// Operacoes
 	public static Arquivo criaArquivo(String nome) {
+		Arquivo arquivo = null;
 		
-		if (obterExtensaoArquivo(nome).equals(DOC))
-		{
-			Arquivo arquivo = new ArquivoDOC();
+		switch (obterExtensaoArquivo(nome)) {
+		case DOC:
+			arquivo = new ArquivoDOC();
 			arquivo.nome = nome;
-			
-			return arquivo;
-		}
-		if (obterExtensaoArquivo(nome).equals(PDF))
-		{
-			Arquivo arquivo = new ArquivoPDF();
+			break;
+		case DOCX:
+			arquivo = new ArquivoDOCX();
 			arquivo.nome = nome;
-			
-			return arquivo;
-		}
-		if (obterExtensaoArquivo(nome).equals(TXT))
-		{
-			Arquivo arquivo = new ArquivoTXT();
+			break;
+		case PDF:
+			arquivo = new ArquivoPDF();
 			arquivo.nome = nome;
-			
-			return arquivo;
+			break;
+		case TXT:
+			arquivo = new ArquivoTXT();
+			arquivo.nome = nome;
+			break;
 		}
-		return null;
+		return arquivo;
 	}
 	
 	public static String obterExtensaoArquivo(String nome) {

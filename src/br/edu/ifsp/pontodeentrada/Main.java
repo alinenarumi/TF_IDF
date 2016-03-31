@@ -7,7 +7,7 @@ import br.edu.ifsp.arquivo.Arquivo;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		Arquivo a = Arquivo.criaArquivo("/home/henrique/Desktop/Exemplo de Plano de Testes.doc");
+		Arquivo a = Arquivo.criaArquivo("/home/henrique/Desktop/ExercíciosJurosSimples-2.docx");
 		a.lerArquivo();
 	}
 }

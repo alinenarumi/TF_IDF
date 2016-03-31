@@ -13,12 +13,11 @@ public class ArquivoDOC extends Arquivo {
 	public void lerArquivo() {
 		POIFSFileSystem sistemaDeArquivo = null;
 		WordExtractor extrator = null;  
-		String texto = "";
 		
 		try {
 			sistemaDeArquivo = new POIFSFileSystem(new FileInputStream(this.nome));
 			extrator = new WordExtractor(sistemaDeArquivo);  
-			texto = extrator.getText();
+			String texto = extrator.getText();
 			System.out.println(texto);
 			
 		} catch (IOException e) {
