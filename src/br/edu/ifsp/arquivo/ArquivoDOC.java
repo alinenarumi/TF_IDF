@@ -18,13 +18,11 @@ public class ArquivoDOC extends Arquivo {
 			sistemaDeArquivo = new POIFSFileSystem(new FileInputStream(this.nome));
 			extrator = new WordExtractor(sistemaDeArquivo);  
 			String texto = extrator.getText();
-			System.out.println(texto);
+			String[] arrayPalavras = this.obterPalavras(texto);
+			this.inserirPalavras(arrayPalavras);
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-
 }

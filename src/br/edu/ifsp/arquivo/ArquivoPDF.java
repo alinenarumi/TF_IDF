@@ -16,7 +16,10 @@ public class ArquivoPDF extends Arquivo{
 			arquivoPDF = PDDocument.load(new File(this.nome));
 			PDFTextStripper descascador = new PDFTextStripper();
 			String texto = descascador.getText(arquivoPDF);
-			System.out.println(texto);
+			
+			String[] arrayPalavras = this.obterPalavras(texto);
+			this.inserirPalavras(arrayPalavras);
+			
 		} catch(IOException e) {
 			System.out.println("IOException: " + e.getMessage());
 			throw new RuntimeException(e);

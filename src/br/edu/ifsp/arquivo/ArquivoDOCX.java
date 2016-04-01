@@ -16,7 +16,8 @@ public class ArquivoDOCX extends Arquivo {
             documento = new XWPFDocument(new FileInputStream(this.nome));
             extractor = new XWPFWordExtractor(documento);
             String texto = extractor.getText();
-            System.out.println(texto);
+            String[] arrayPalavras = this.obterPalavras(texto);
+			this.inserirPalavras(arrayPalavras);
         }
         catch (Exception e) {
             e.printStackTrace();
