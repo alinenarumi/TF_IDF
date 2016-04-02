@@ -7,8 +7,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-
-
 public abstract class Arquivo {
 	// Tipo de arquivos aceitos no sistema
 	public static final String DOC = "doc";
