@@ -24,6 +24,8 @@ public class ArquivoConfiguracao {
 	}
 	
 	public List<String> linhas() {
+		this.linhas = new ArrayList<>(); 
+		this.lerArquivo();
 		return this.linhas;
 	}
 	
@@ -58,7 +60,7 @@ public class ArquivoConfiguracao {
             for (int i = 0; i < linhas.length; i++) {
             	output.write(linhas[i]);
             	
-            	if(i == linhas.length) {
+            	if(i != linhas.length-1) {
             		output.write("\n");
             	}
 			} 
