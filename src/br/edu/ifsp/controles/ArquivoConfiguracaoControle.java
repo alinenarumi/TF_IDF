@@ -7,13 +7,17 @@ import br.edu.ifsp.configuracao.ArquivoConfiguracao;
 import br.edu.ifsp.telas.TelaConfiguracao;
 
 public class ArquivoConfiguracaoControle {
+	private ArquivoConfiguracao modelo = null;
 	private TelaConfiguracao tela;
-	private ArquivoConfiguracao modelo;
 	
 	public ArquivoConfiguracaoControle(TelaConfiguracao tela, ArquivoConfiguracao modelo) {
 		this.tela = tela;
 		this.modelo = modelo;
 		
+		this.intEventos();
+	}
+	
+	public void intEventos() {
 		this.tela.setBtnSalvarEventoClick(new ActionListener() {		
 			@Override
 			public void actionPerformed(ActionEvent e) {
