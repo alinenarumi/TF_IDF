@@ -7,7 +7,7 @@ import br.edu.ifsp.configuracao.ArquivoConfiguracao;
 import br.edu.ifsp.telas.TelaConfiguracao;
 
 public class ArquivoConfiguracaoControle {
-	private ArquivoConfiguracao modelo = null;
+	private ArquivoConfiguracao modelo;
 	private TelaConfiguracao tela;
 	
 	public ArquivoConfiguracaoControle(TelaConfiguracao tela, ArquivoConfiguracao modelo) {

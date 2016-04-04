@@ -51,6 +51,7 @@ public class TelaConfiguracao extends JFrame
 		
 		this.setSize(500, 400);
 		this.setResizable(false);
+		this.setLocationRelativeTo(null);
 		this.setVisible(true);
 	}
 	
