@@ -27,6 +27,7 @@ public abstract class Arquivo {
 	public String getNome() {
 		return this.nome;
 	}
+	//Teste Operações
 	
 	// Operacoes
 	public abstract void lerArquivo();
