@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+//teste aline
 
 public class ArquivoConfiguracao {
 	private String caminho;
